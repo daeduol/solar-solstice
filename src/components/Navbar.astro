@@ -2,18 +2,21 @@
 import Button from '@components/ui/Button.astro';
 import ToggleTheme from '@components/ui/ToggleTheme.astro';
 import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
+import { getLangFromUrl, useTranslations } from '../i18n/ui/utils';
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const menuitems = [
 	{
-		title: 'About',
+		title: t('about'),
 		path: '#about',
 	},
 	{
-		title: 'Projects',
+		title: t('proyects'),
 		path: '#projects',
 	},
 	{
-		title: 'Contact',
+		title: t('contact'),
 		path: '#contact',
 	},
 ];
@@ -22,7 +25,7 @@ const menuitems = [
 <header data-testId="header" class="my-5 flex flex-col items-center justify-between lg:flex-row">
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
-			<Button size={'sm'} name="Download CV">Download CV</Button>
+			<Button size={'sm'} name="Download CV">{t('cv button')}</Button>
 			<div class="block lg:hidden">
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>

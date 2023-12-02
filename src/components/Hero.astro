@@ -2,21 +2,24 @@
 import heroImage from '../../src/assets/images/hero1.png';
 import { Image } from 'astro:assets';
 import Button from '@components/ui/Button.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/ui/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section
 	data-testid="hero"
-	class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
+	class="flex h-screen flex-col-reverse items-center justify-center text-left lg:flex-row"
 >
 	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
 		<div>
 			<h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">
-				Hi! My name is <span class="text-orange">Daniel Olano</span> and I am a web developer based in El
-				Salvador.
+				{t('welcome1')} <span class="text-orange">Daniel Olano</span>{t('welcome2')}
 			</h1>
 		</div>
 		<div class="mb-10">
-			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
+			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">{t('learn more')}</Button>
 		</div>
 	</div>
 	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
