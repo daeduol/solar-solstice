@@ -7,12 +7,10 @@ export const languages = {
   
   export const ui = {
     en: {
-      'cv button': 'Download Cv',
+      'cv button': 'Download CV',
       'about': 'About',
       'proyects': 'Proyects',
       'contact': 'Contact',
-      'welcome1': 'Hi! My name is',
-      'welcome2':  ' and I am a web developer based in El Salvador.',
       'learn more': 'Learn more',
     },
     es: {
@@ -20,8 +18,6 @@ export const languages = {
       'about': 'Acerca de',
       'proyects': 'Proyectos',
       'contact': 'Contacto',
-      'welcome1': 'Hola! Mi nombre es',  
-      'welcome2': ' y soy desarrollador web radicado en El Salvador.',
       'learn more': 'Saber más',
     },
   } as const;
