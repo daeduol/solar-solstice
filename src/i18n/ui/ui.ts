@@ -12,6 +12,8 @@ export const languages = {
       'proyects': 'Proyects',
       'contact': 'Contact',
       'learn more': 'Learn more',
+      'say hello' : 'Say hello!',
+      'view full' : 'View full private projects archive',
     },
     es: {
       'cv button': 'Descargar CV',
@@ -19,5 +21,7 @@ export const languages = {
       'proyects': 'Proyectos',
       'contact': 'Contacto',
       'learn more': 'Saber más',
+      'say hello' : 'Saluda!',
+      'view full' : 'mira el archivo de proyectos privado completo' 
     },
   } as const;
