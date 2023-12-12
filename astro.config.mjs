@@ -10,7 +10,7 @@ export default defineConfig({
   adapter: node({
     mode: "standalone"
   }),
-  integrations: [tailwind(), mdx()],
+  integrations: [tailwind(), mdx(),i18n()],
   i18n: {
     defaultLocale: "es",
     locales: ["en", "es"],
