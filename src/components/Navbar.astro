@@ -2,7 +2,7 @@
 import Button from '@components/ui/Button.astro';
 import ToggleTheme from '@components/ui/ToggleTheme.astro';
 import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
-import { getLangFromUrl, useTranslations } from '../i18n/ui/utils';
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
