@@ -1,6 +1,7 @@
 {
 	"extends": "astro/tsconfigs/base",
 	"compilerOptions": {
+		"strict": true,
 		"target": "ESNext",
 		"module": "ESNext",
 		// Enable node-style module resolution, for things like npm package imports.
@@ -19,7 +20,8 @@
 			"@components/*": ["components/*"],
 			"@layouts/*": ["layouts/*"],
 			"@assets/*": ["assets/*"],
-			"@pages/*": ["pages/*"]
+			"@pages/*": ["pages/*"],
+			"@i18n/*":["i18n/*"],
 		}
 	}
 }
