@@ -2,12 +2,13 @@
 import Footer from '@components/Footer.astro';
 import Navbar from '@components/Navbar.astro';
 import { SEO } from 'astro-seo';
-
+import LanguagePicker from '@components/LanguagePicker.astro';
 export interface LayoutProps {
 	title: string;
 }
 
 const { title = 'Daniel Olano | Java web developer' } = Astro.props as LayoutProps;
+
 ---
 
 <!DOCTYPE html>
@@ -28,7 +29,8 @@ const { title = 'Daniel Olano | Java web developer' } = Astro.props as LayoutPro
 	<body
 		class="mx-auto max-w-screen-xl bg-white px-5 font-sans text-white dark:bg-black xs:text-[16px] md:text-[18px]"
 	>
-		<Navbar />
+		<Navbar  />
+		<LanguagePicker />
 		<slot />
 		<Footer />
 		<style is:global>
