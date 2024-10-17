@@ -20,7 +20,7 @@ jobs:
         uses: withastro/action@v3
         with:
           path: . # Ubicación raíz de tu proyecto de Astro
-          base: '/solar-solstice' # Asegúrate de incluir el valor base para que los enlaces sean correctos
+          base:  # Asegúrate de incluir el valor base para que los enlaces sean correctos
 
   deploy:
     needs: build
