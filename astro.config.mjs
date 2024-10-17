@@ -14,7 +14,7 @@ export default defineConfig({
   }),
   integrations: [tailwind(), mdx()],
   i18n: {
-    defaultLocale: "es",
+    defaultLocale: "en",
     locales: ["en", "es"],
     routing: {
       prefixDefaultLocale: true
