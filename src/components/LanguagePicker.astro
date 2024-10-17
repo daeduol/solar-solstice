@@ -22,7 +22,6 @@ const styles = {
 	primary: 'bg-black text-white hover:bg-orange  border-2 border-transparent',
 };
 ---
-
 <div class="dropdown">
 	<button
 		{...rest}
@@ -39,7 +38,10 @@ const styles = {
 	<div class="dropdown-content">
 		{
 			Object.entries(languages).map(([lang, label]) => (
-				<a href={`/solar-solstice/${lang}/`} on:click={() => lang}>
+				<a
+					href={lang === 'en' ? `/solar-solstice/` : `/solar-solstice/${lang}/`}
+					onclick={() => lang}
+				>
 					{label}
 				</a>
 			))

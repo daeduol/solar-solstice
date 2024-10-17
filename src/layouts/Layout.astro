@@ -7,11 +7,10 @@ export interface LayoutProps {
 }
 
 const { title = 'Daniel Olano | Java web developer' } = Astro.props as LayoutProps;
-
 ---
 
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-testid="html">
+<!doctype html>
+<html lang="{lang}" class="scroll-smooth" data-testid="html">
 	<head>
 		<SEO
 			title="A Very Descriptive Title"
@@ -28,7 +27,7 @@ const { title = 'Daniel Olano | Java web developer' } = Astro.props as LayoutPro
 	<body
 		class="mx-auto max-w-screen-xl bg-white px-5 font-sans text-white dark:bg-black xs:text-[16px] md:text-[18px]"
 	>
-		<Navbar  />
+		<Navbar />
 		<slot />
 		<Footer />
 		<style is:global>

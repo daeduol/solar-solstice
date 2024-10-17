@@ -3,11 +3,9 @@ import heroImage from '@assets/images/hero1.png';
 import { Image } from 'astro:assets';
 import Button from '@components/ui/Button.astro';
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
-
-
+const basePath = '/solar-solstice';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
 ---
 
 <section
@@ -16,12 +14,15 @@ const t = useTranslations(lang);
 >
 	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
 		<div>
-			<h1 class="mb-10 font-monospace text-3x1 text-black dark:text-white lg:text-5xl">
-				¡Hola! Mi nombre es <span class="text-orange">Daniel Olano</span> y soy desarrollador web radicado en El Salvador.
+			<h1 class="text-3x1 mb-10 font-monospace text-black dark:text-white lg:text-5xl">
+				¡Hola! Mi nombre es <span class="text-orange">Daniel Olano</span> y soy desarrollador web radicado
+				en El Salvador.
 			</h1>
 		</div>
 		<div class="mb-10">
-			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">{t('learn more')}</Button>
+			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">
+				{t('learn more')}
+			</Button>
 		</div>
 	</div>
 	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
