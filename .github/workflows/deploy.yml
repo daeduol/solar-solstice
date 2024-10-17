@@ -19,8 +19,6 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-          path: . # Ubicación raíz de tu proyecto de Astro
-          base:  # Asegúrate de incluir el valor base para que los enlaces sean correctos
 
   deploy:
     needs: build
