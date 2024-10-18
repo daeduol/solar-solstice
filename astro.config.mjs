@@ -8,11 +8,6 @@ import deno from '@deno/astro-adapter';
 export default defineConfig({
 	output: 'server',
 	adapter: deno(),
-	site: 'https://daeduol.github.io',
-	base: '/solar-solstice/',
-	output: 'hybrid',
-	adapter: node({
-		mode: 'standalone',
 	}),
 	integrations: [tailwind(), mdx()],
 	i18n: {
