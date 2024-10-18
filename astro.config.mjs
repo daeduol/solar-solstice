@@ -8,7 +8,6 @@ import deno from '@deno/astro-adapter';
 export default defineConfig({
 	output: 'server',
 	adapter: deno(),
-	}),
 	integrations: [tailwind(), mdx()],
 	i18n: {
 		defaultLocale: 'en',
