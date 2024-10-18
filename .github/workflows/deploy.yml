@@ -39,4 +39,4 @@ jobs:
         with:
           project: "daeduol-solar-solst-40"
           entrypoint: "server/entry.mjs"
-          root: ""
+          root: "doc"
