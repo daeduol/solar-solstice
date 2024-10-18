@@ -6,7 +6,7 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://daeduol.github.io/solar-solstice/',
+	site: 'https://daeduol.github.io',
 	base: '/solar-solstice/',
 	output: 'hybrid',
 	adapter: node({
