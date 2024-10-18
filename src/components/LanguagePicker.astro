@@ -39,7 +39,7 @@ const styles = {
 		{
 			Object.entries(languages).map(([lang, label]) => (
 				<a
-					href={lang === 'en' ? `/solar-solstice/` : `/solar-solstice/${lang}/`}
+					href={lang === 'en' ? `/` : `/${lang}/`}
 					onclick={() => lang}
 				>
 					{label}

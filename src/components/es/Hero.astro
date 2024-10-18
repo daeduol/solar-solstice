@@ -3,7 +3,7 @@ import heroImage from '@assets/images/hero1.png';
 import { Image } from 'astro:assets';
 import Button from '@components/ui/Button.astro';
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
-const basePath = '/solar-solstice';
+const basePath = '/';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
