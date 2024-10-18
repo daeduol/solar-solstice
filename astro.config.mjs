@@ -2,10 +2,12 @@ import mdx from '@astrojs/mdx';
 import tailwind from '@astrojs/tailwind';
 import { defineConfig } from "astro/config";
 
-import node from "@astrojs/node";
+import deno from '@deno/astro-adapter';
 
 // https://astro.build/config
 export default defineConfig({
+	output: 'server',
+	adapter: deno(),
 	site: 'https://daeduol.github.io',
 	base: '/solar-solstice/',
 	output: 'hybrid',
