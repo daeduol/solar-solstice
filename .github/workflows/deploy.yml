@@ -17,14 +17,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-<<<<<<< HEAD
-=======
-
-    permissions:
-      id-token: write # Needed for auth with Deno Deploy
-      contents: read # Needed to clone the repository
-
->>>>>>> 0f5280881271164eff8b4667403cac2883da600e
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
@@ -35,7 +27,6 @@ jobs:
           # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
           # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
-<<<<<<< HEAD
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -46,27 +37,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-=======
-      - name: Install Deno
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-
-      - name: Install step
-        run: "npm install"
-
-      - name: Build step
-        run: "npm run build"
-
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
-        with:
-          project: "daeduol-solar-solst-40"
-          entrypoint: "server/entry.mjs"
-          root: "dist"
->>>>>>> 0f5280881271164eff8b4667403cac2883da600e
