@@ -7,7 +7,7 @@ import deno from '@deno/astro-adapter';
 // https://astro.build/config
 export default defineConfig({
 	site: "https://daeduol@github.io",
-	base: '/solar-solstice/',
+	base: '/',
 	integrations: [tailwind(), mdx()],
 	i18n: {
 		defaultLocale: 'en',
