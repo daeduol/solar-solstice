@@ -6,7 +6,7 @@ import deno from '@deno/astro-adapter';
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://daeduol@github.io",
+	site: "https://daeduol.is-a.dev",
 	base: '/',
 	integrations: [tailwind(), mdx()],
 	i18n: {
